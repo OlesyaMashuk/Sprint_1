@@ -1,11 +1,11 @@
 class Tester:
 
-    def __init__(self, name, deadline):
-        self.name = name
+    def __init__(self, name, deadline): #добавляем self в параметры метода
+        self.name = name #атрибуты сохраняем в экземпляре
         self.deadline = deadline
 
     def work_hard(self, deadline = True):
-        if deadline:
+        if deadline: #используем параметр, а не атрибут
             print(self.name, 'Что ж, ещё часок поработаю!')
         else:
             print(self.name, 'Можно отдыхать')
